@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "e4b581cb-3afc-42e7-a59f-a5a6460a5b5e",
+		"name": "fonyou metodos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23704341"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/notas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n {\r\n    \"ciudad\": \"bogota\",\r\n    \"edad\": \"25\",\r\n    \"nombre\": \"alejandro\",\r\n    \"zona_horaria\": \"America/Bogota\",\r\n    \"id_estudiante\": 0\r\n  }\r\n]\r\n    \r\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/examen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/examen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"examen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080//enviarprueba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"nota1\": \"Java\",\r\n    \"nota2\": \"Yukihiro Matsumoto\",\r\n    \"nota3\": \"1995\",\r\n    \"nota4\": \"public class Componente extends Producto\",\r\n    \"id_notas\": 0\r\n    }\r\n    \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enviarprueba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enviarprueba"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
